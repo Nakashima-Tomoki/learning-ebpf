@@ -1,0 +1,599 @@
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_SOCKET_FILTER, insn_cnt=2, insns=0x7ffec5b10e20, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=0, func_info_rec_size=0, func_info=NULL, func_info_cnt=0, line_info_rec_size=0, line_info=NULL, line_info_cnt=0, attach_btf_id=0, attach_prog_fd=0}, 116) = 3
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_SOCKET_FILTER, insn_cnt=2, insns=0x7ffec5b11020, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=0, func_info_rec_size=0, func_info=NULL, func_info_cnt=0, line_info_rec_size=0, line_info=NULL, line_info_cnt=0, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0\20\0\0\0\20\0\0\0\5\0\0\0\1\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=45, btf_log_size=0, btf_log_level=0}, 32) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0000\0\0\0000\0\0\0\t\0\0\0\1\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=81, btf_log_size=0, btf_log_level=0}, 32) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\08\0\0\08\0\0\0\t\0\0\0\0\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=89, btf_log_size=0, btf_log_level=0}, 32) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0\f\0\0\0\f\0\0\0\7\0\0\0\1\0\0\0\0\0\0\20"..., btf_log_buf=NULL, btf_size=43, btf_log_size=0, btf_log_level=0}, 32) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0000\0\0\0000\0\0\0\t\0\0\0\1\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=81, btf_log_size=0, btf_log_level=0}, 32) = 3
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0000\0\0\0000\0\0\0\5\0\0\0\0\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=77, btf_log_size=0, btf_log_level=0}, 32) = -1 EINVAL (Invalid argument)
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0(\0\0\0(\0\0\0\5\0\0\0\0\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=69, btf_log_size=0, btf_log_level=0}, 32) = -1 EINVAL (Invalid argument)
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0\f\0\0\0\f\0\0\0\10\0\0\0\1\0\0\0\0\0\0\23"..., btf_log_buf=NULL, btf_size=44, btf_log_size=0, btf_log_level=0}, 32) = -1 EINVAL (Invalid argument)
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0\4\10\0\0\4\10\0\0\200\n\0\0\0\0\0\0\0\0\0\2"..., btf_log_buf=0x7ffec5b11230, btf_size=4764, btf_log_size=65536, btf_log_level=1}, 32) = 3
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_SOCKET_FILTER, insn_cnt=2, insns=0x7ffec5b10d20, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="libbpf_nametest"}, 64) = 4
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_ARRAY, key_size=4, value_size=4, max_entries=1, map_flags=BPF_F_MMAPABLE, inner_map_fd=0, map_name="libbpf_mmap", map_ifindex=0, btf_fd=0, btf_key_type_id=0, btf_value_type_id=0, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 4
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_PERF_EVENT_ARRAY, key_size=4, value_size=4, max_entries=48, map_flags=0, inner_map_fd=0, map_name="output", map_ifindex=0, btf_fd=0, btf_key_type_id=0, btf_value_type_id=0, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 4
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_HASH, key_size=4, value_size=12, max_entries=10240, map_flags=0, inner_map_fd=0, map_name="my_config", map_ifindex=0, btf_fd=3, btf_key_type_id=12, btf_value_type_id=16, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 5
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_ARRAY, key_size=4, value_size=32, max_entries=1, map_flags=0, inner_map_fd=0, map_name="libbpf_global", map_ifindex=0, btf_fd=0, btf_key_type_id=0, btf_value_type_id=0, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 6
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_SOCKET_FILTER, insn_cnt=5, insns=0x7ffec5b10d00, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=0, func_info_rec_size=0, func_info=NULL, func_info_cnt=0, line_info_rec_size=0, line_info=NULL, line_info_cnt=0, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 7
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_ARRAY, key_size=4, value_size=185, max_entries=1, map_flags=BPF_F_RDONLY_PROG|BPF_F_MMAPABLE, inner_map_fd=0, map_name="hello_bp.rodata", map_ifindex=0, btf_fd=3, btf_key_type_id=0, btf_value_type_id=79, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 6
+bpf(BPF_MAP_UPDATE_ELEM, {map_fd=6, key=0x7ffec5b10e1c, value=0x7f507a159000, flags=BPF_ANY}, 32) = 0
+bpf(BPF_MAP_FREEZE, {map_fd=6}, 4)      = 0
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_ARRAY, key_size=4, value_size=1, max_entries=1, map_flags=BPF_F_RDONLY_PROG|BPF_F_MMAPABLE, inner_map_fd=0, map_name="hello_b.kconfig", map_ifindex=0, btf_fd=3, btf_key_type_id=0, btf_value_type_id=77, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 7
+bpf(BPF_MAP_UPDATE_ELEM, {map_fd=7, key=0x7ffec5b10e1c, value=0x7f507a11f000, flags=BPF_ANY}, 32) = 0
+bpf(BPF_MAP_FREEZE, {map_fd=7}, 4)      = 0
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_TRACEPOINT, insn_cnt=6, insns=0x7ffec5b10ee0, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=0, func_info_rec_size=0, func_info=NULL, func_info_cnt=0, line_info_rec_size=0, line_info=NULL, line_info_cnt=0, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 8
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_KPROBE, insn_cnt=61, insns=0x563185dd7450, license="Dual BSD/GPL", log_level=1, log_size=65536, log_buf="magic: 0xeb9f\nversion: 1\nflags: "..., kern_version=KERNEL_VERSION(5, 15, 99), prog_flags=0, prog_name="kprobe_sys_exec", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=3, func_info_rec_size=8, func_info=0x563185dd6060, func_info_cnt=1, line_info_rec_size=16, line_info=0x563185dd5f50, line_info_cnt=9, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 8
+bpf(BPF_MAP_CREATE, {map_type=BPF_MAP_TYPE_ARRAY, key_size=4, value_size=32, max_entries=1, map_flags=0, inner_map_fd=0, map_name="libbpf_det_bind", map_ifindex=0, btf_fd=0, btf_key_type_id=0, btf_value_type_id=0, btf_vmlinux_value_type_id=0, map_extra=0}, 72) = 9
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_SOCKET_FILTER, insn_cnt=2, insns=0x7ffec5b10530, license="GPL", log_level=0, log_size=0, log_buf=NULL, kern_version=KERNEL_VERSION(0, 0, 0), prog_flags=0, prog_name="", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=0, func_info_rec_size=0, func_info=NULL, func_info_cnt=0, line_info_rec_size=0, line_info=NULL, line_info_cnt=0, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 10
+bpf(BPF_PROG_BIND_MAP, 0x7ffec5b10480, 12) = 0
+bpf(BPF_PROG_BIND_MAP, 0x7ffec5b10560, 12) = 0
+bpf(BPF_PROG_LOAD, {prog_type=BPF_PROG_TYPE_KPROBE, insn_cnt=56, insns=0x563185dd7810, license="Dual BSD/GPL", log_level=1, log_size=65536, log_buf="processed 54 insns (limit 100000"..., kern_version=KERNEL_VERSION(5, 15, 99), prog_flags=0, prog_name="kprobe_do_execv", prog_ifindex=0, expected_attach_type=BPF_CGROUP_INET_INGRESS, prog_btf_fd=3, func_info_rec_size=8, func_info=0x563185dd6230, func_info_cnt=1, line_info_rec_size=16, line_info=0x563185dd62d0, line_info_cnt=20, attach_btf_id=0, attach_prog_fd=0, fd_array=NULL}, 144) = 9
+bpf(BPF_PROG_BIND_MAP, 0x7ffec5b10560, 12) = 0
+bpf(BPF_BTF_LOAD, {btf="\237\353\1\0\30\0\0\0\0\0\0\0\20\0\0\0\20\0\0\0\5\0\0\0\1\0\0\0\0\0\0\1"..., btf_log_buf=NULL, btf_size=45, btf_log_size=0, btf_log_level=0}, 32) = 10
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=10, info_len=32, info=0x7ffec5b10360}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=0, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=1}, 12) = 10
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=10, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=1, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=2}, 12) = 10
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=10, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=10, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=2, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=3}, 12) = 11
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=11, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=11, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=3, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=4}, 12) = 12
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=12, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=12, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=4, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=5}, 12) = 13
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=13, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=13, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=5, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=6}, 12) = 14
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=14, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=14, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=14, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=6, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=8}, 12) = 15
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=15, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=15, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=15, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=8, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=9}, 12) = 16
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=16, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=16, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=16, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=9, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=10}, 12) = 17
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=17, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=17, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=17, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=10, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=11}, 12) = 18
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=18, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=18, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=18, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=11, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=12}, 12) = 19
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=19, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=19, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=19, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=12, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=13}, 12) = 20
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=20, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=20, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=13, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=14}, 12) = 21
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=21, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=21, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=14, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=15}, 12) = 22
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=22, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=22, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=22, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=15, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=16}, 12) = 23
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=23, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=23, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=16, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=17}, 12) = 24
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=24, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=24, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=17, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=18}, 12) = 25
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=25, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=25, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=25, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=18, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=19}, 12) = 26
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=26, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=26, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=19, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=20}, 12) = 27
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=27, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=27, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=27, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=20, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=21}, 12) = 28
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=28, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=28, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=21, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=22}, 12) = 29
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=29, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=29, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=22, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=23}, 12) = 30
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=30, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=30, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=23, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=24}, 12) = 31
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=31, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=31, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=24, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=25}, 12) = 32
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=32, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=32, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=25, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=26}, 12) = 33
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=33, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=33, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=26, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=27}, 12) = 34
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=34, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=34, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=27, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=28}, 12) = 35
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=35, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=35, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=35, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=28, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=29}, 12) = 36
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=36, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=36, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=29, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=30}, 12) = 37
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=37, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=37, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=37, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=30, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=31}, 12) = 38
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=38, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=38, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=38, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=31, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=32}, 12) = 39
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=39, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=39, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=39, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=32, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=33}, 12) = 40
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=40, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=40, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=33, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=34}, 12) = 41
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=41, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=41, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=41, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=34, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=35}, 12) = 42
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=42, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=42, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=35, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=36}, 12) = 43
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=43, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=43, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=36, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=37}, 12) = 44
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=44, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=44, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=37, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=38}, 12) = 45
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=45, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=45, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=45, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=38, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=39}, 12) = 46
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=46, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=46, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=39, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=40}, 12) = 47
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=47, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=47, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=40, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=41}, 12) = 48
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=48, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=48, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=41, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=42}, 12) = 49
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=49, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=49, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=42, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=43}, 12) = 50
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=50, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=50, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=43, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=44}, 12) = 51
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=51, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=51, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=44, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=45}, 12) = 52
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=52, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=52, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=45, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=46}, 12) = 53
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=53, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=53, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=46, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=47}, 12) = 54
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=54, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=54, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=54, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=47, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=48}, 12) = 55
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=55, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=55, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=55, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=48, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=49}, 12) = 56
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=56, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=56, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=56, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=49, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=50}, 12) = 57
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=57, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=57, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=50, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=51}, 12) = 58
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=58, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=58, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=58, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=51, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=52}, 12) = 59
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=59, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=59, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=59, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=52, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=53}, 12) = 60
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=60, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=60, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=60, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=53, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=54}, 12) = 61
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=61, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=61, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=61, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=54, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=56}, 12) = 62
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=62, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=62, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=56, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=57}, 12) = 63
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=63, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=63, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=57, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=58}, 12) = 64
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=64, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=64, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=58, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=59}, 12) = 65
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=65, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=65, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=59, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=60}, 12) = 66
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=66, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=66, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=60, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=61}, 12) = 67
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=67, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=67, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=61, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=62}, 12) = 68
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=68, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=68, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=62, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=63}, 12) = 69
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=69, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=69, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=63, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=64}, 12) = 70
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=70, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=70, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=64, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=65}, 12) = 71
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=71, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=71, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=71, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=65, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=66}, 12) = 72
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=72, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=72, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=66, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=67}, 12) = 73
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=73, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=73, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=67, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=68}, 12) = 74
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=74, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=74, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=68, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=70}, 12) = 75
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=75, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=75, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=75, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=70, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=71}, 12) = 76
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=76, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=76, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=71, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=72}, 12) = 77
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=77, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=77, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=77, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=72, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=73}, 12) = 78
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=78, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=78, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=73, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=74}, 12) = 79
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=79, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=79, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=79, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=74, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=75}, 12) = 80
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=80, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=80, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=75, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=76}, 12) = 81
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=81, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=81, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=81, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=76, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=77}, 12) = 82
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=82, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=82, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=77, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=78}, 12) = 83
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=83, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=83, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=78, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=79}, 12) = 84
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=84, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=84, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=79, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=80}, 12) = 85
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=85, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=85, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=80, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=81}, 12) = 86
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=86, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=86, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=81, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=82}, 12) = 87
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=87, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=87, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=82, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=83}, 12) = 88
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=88, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=88, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=83, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=84}, 12) = 89
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=89, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=89, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=84, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=85}, 12) = 90
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=90, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=90, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=85, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=86}, 12) = 91
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=91, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=91, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=86, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=87}, 12) = 92
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=92, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=92, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=92, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=87, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=88}, 12) = 93
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=93, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=93, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=88, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=89}, 12) = 94
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=94, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=94, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=94, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=89, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=90}, 12) = 95
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=95, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=95, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=95, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=90, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=91}, 12) = 96
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=96, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=96, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=96, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=91, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=92}, 12) = 97
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=97, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=97, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=92, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=93}, 12) = 98
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=98, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=98, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=93, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=94}, 12) = 99
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=99, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=99, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=94, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=95}, 12) = 100
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=100, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=100, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=100, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=95, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=96}, 12) = 101
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=101, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=101, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=96, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=97}, 12) = 102
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=102, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=102, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=102, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=97, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=98}, 12) = 103
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=103, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=103, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=98, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=99}, 12) = 104
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=104, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=104, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=104, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=99, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=100}, 12) = 105
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=105, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=105, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=105, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=100, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=101}, 12) = 106
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=106, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=106, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=101, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=102}, 12) = 107
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=107, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=107, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=107, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=102, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=103}, 12) = 108
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=108, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=108, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=108, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=103, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=104}, 12) = 109
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=109, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=109, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=109, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=104, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=105}, 12) = 110
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=110, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=110, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=110, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=105, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=106}, 12) = 111
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=111, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=111, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=111, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=106, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=107}, 12) = 112
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=112, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=112, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=112, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=107, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=108}, 12) = 113
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=113, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=113, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=108, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=109}, 12) = 114
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=114, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=114, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=109, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=110}, 12) = 115
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=115, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=115, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=115, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=110, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=111}, 12) = 116
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=116, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=116, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=111, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=112}, 12) = 117
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=117, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=117, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=112, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=113}, 12) = 118
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=118, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=118, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=118, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=113, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=114}, 12) = 119
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=119, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=119, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=119, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=114, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=115}, 12) = 120
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=120, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=120, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=115, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=116}, 12) = 121
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=121, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=121, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=121, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=116, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=117}, 12) = 122
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=122, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=122, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=117, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=118}, 12) = 123
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=123, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=123, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=123, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=118, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=119}, 12) = 124
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=124, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=124, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=124, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=119, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=120}, 12) = 125
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=125, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=125, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=125, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=120, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=121}, 12) = 126
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=126, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=126, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=126, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=121, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=122}, 12) = 127
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=127, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=127, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=127, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=122, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=123}, 12) = 128
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=128, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=128, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=128, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=123, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=124}, 12) = 129
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=129, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=129, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=129, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=124, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=125}, 12) = 130
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=130, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=130, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=130, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=125, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=126}, 12) = 131
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=131, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=131, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=131, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=126, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=183}, 12) = 132
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=132, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=132, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=132, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=183, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=297}, 12) = 133
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=133, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=297, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=349}, 12) = 133
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=133, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=133, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=349, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=350}, 12) = 134
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=134, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=134, info_len=32, info=0x7ffec5b10380}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=350, next_id=0, open_flags=0}, 12) = 0
+bpf(BPF_BTF_GET_FD_BY_ID, {btf_id=356}, 12) = 135
+bpf(BPF_OBJ_GET_INFO_BY_FD, {info={bpf_fd=135, info_len=32, info=0x7ffec5b10410}}, 16) = 0
+bpf(BPF_BTF_GET_NEXT_ID, {start_id=356, next_id=0, open_flags=0}, 12) = -1 ENOENT (No such file or directory)
++++ exited with 1 +++
